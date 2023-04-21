@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CONSTRUCT FOR LOOPS</h1>
+    <h2>#2</h2>
+    <h2>A.)</h2>
+    <h3 id="number"></h3>
+    <script>
+         let textdocument = " ";
+         for( let i = 0; i <= 30; i++) {
+            textdocument += i + " ";
+        } 
+        document.getElementById("number").innerHTML = textdocument;
+
+    </script>
+
+    <h2>B.)</h2>
+    <script>
+        function even() {
+          for(let j = 0; j <= 40; j++) {
+             if(j%2==0) {
+                document.write(j + " ");
+          }
+        }    
+      }
+      even();
+    </script>
+
+    <h2>C.)</h2>
+    <script>
+      function even() {
+        for(let k = 40; k > 10; k--) {
+         if(k%3==0) {
+            document.write(k + " ");
+        }
+    }    
+    }
+    even();
+    </script>
+
+    <!--ELSE IF, ELSE DIALOGBOX-->
+    <script>
+        var talk = prompt("How old are you?")
+
+        if(talk == 25) {
+          alert("You are the most handsome");
+        }
+        else if(talk == 45) {
+          alert("oh, it's sugar daddy");
+        }
+        else if(talk == 60) {
+          alert("Your Senior Citizen");
+        }
+        else {
+          alert("Please choose your age....");
+        }
+        console.log(talk);
+    </script>
+    <script>
+      var number = prompt("Enter your Number: ");
+      if(number < 100){
+          alert("Your less than is correct!");
+      }
+      else{
+          alert("SORRY YOUR WRONG NUMBER!");
+      }       
+    console.log(number);
+    </script>
+
+</body>
+</html>
